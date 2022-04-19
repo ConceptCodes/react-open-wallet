@@ -1,23 +1,29 @@
-# Next.js + Tailwind CSS Example
+# Open Wallet - React.js + Tailwindcss + Ethers.js
+This is a single page web application built in [React.js](https://reactjs.org) and powered by [Next.js](https://nextjs.org) & [Tailwindcss](https://tailwindcss.com). The concept for the UI came from a post I saw on [pinterest](https://www.pinterest.com/pin/25543922879320475/). somethiing about crypto .For Hosting im using [Vercel](https://vercel.com) for simplicity.
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+> [Live Demo](https://open-wallet.concpetcodes.dev)
 
-## Deploy your own
+![demo_screenshot](./demo.png)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Requirement
+- Next.js
+- Ethers.js
+- Tailwindcss
+- Node.js
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## Setup
 
-## How to use
+```
+$ git clone git@github.com:conceptcodes/react-open-wallet.git
+$ cd react-your-pet
+$ yarn install
+$ yarn dev
+```
+Open `http://localhost:3000` and enjoy!
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app -- --example with-tailwindcss with-tailwindcss-app
+Compile and minify for production
+```
+$ yarn build
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
