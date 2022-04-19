@@ -1,5 +1,5 @@
 export enum currency {
-    ETH,
-    BTC,
-    POLY
+    ETH = "ethereum",
+    BTC = "bitcoin",
+    POLY = "polygon"
 }

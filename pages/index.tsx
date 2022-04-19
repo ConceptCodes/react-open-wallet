@@ -3,7 +3,15 @@ import Head from 'next/head'
 import Navbar from '../components/navbar'
 import Sidebar from '../components/sidebar'
 import PortfolioCard from '../components/cards/portfolio'
-import AssetCard from '../components/cards/assets'
+import { AssetCard } from '../components/cards/assets'
+import { currency } from '@/enums/currency.enum'
+import { AdjustmentsIcon } from '@heroicons/react/outline'
+
+const assets = [
+  {
+
+  }
+]
 
 const Home: NextPage = () => {
   return (
@@ -18,15 +26,27 @@ const Home: NextPage = () => {
       {/* main secion */}
       <main className="flex-col bg-white rounded-xl flex-grow my-10 mx-5 p-5">
         <Navbar />
-        <div className="flex">
+        <div className="flex py-10">
           <section className="w-1/2">
-            <h1 className="font-medium text-xl">Portfolio</h1>
+            <h1 className="section-title">Portfolio</h1>
             <PortfolioCard />
           </section>
           <section className="w-1/2">
-            <h1 className="font-medium text-xl">Assets</h1>
+            <div className="flex justify-between">
+              <h1 className="section-title">Assets</h1>
+              <AdjustmentsIcon className="h-5 text-black" />
+            </div>
             <div className="flex space-x-3">
-              <AssetCard />
+            <AssetCard
+                color="blue"
+                amt={0.45645}
+                currency={currency.BTC}
+              />
+              <AssetCard
+                color="blue"
+                amt={1.96345}
+                currency={currency.ETH}
+              />
             </div>
           </section>
         </div>

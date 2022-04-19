@@ -15,7 +15,7 @@ This is a single page web application built in [React.js](https://reactjs.org) a
 
 ```
 $ git clone git@github.com:conceptcodes/react-open-wallet.git
-$ cd react-your-pet
+$ cd react-open-wallet
 $ yarn install
 $ yarn dev
 ```

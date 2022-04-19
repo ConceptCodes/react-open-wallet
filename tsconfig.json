@@ -6,6 +6,13 @@
     "skipLibCheck": true,
     "strict": true,
     "pretty": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["*"],
+      "@components/*": ["components/*"],
+      "@enums/*": ["enums/*"],
+      "@utils/*": ["utils/*"]
+    },
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
