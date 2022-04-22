@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
 import { SearchIcon, BellIcon } from '@heroicons/react/outline'
 
@@ -9,19 +8,19 @@ const Navbar: NextPage = () => {
       <h1 className="text-4xl font-black">Overview</h1>
       <div className="flex space-x-3 items-center">
         <figure className="navbar-icon">
-          <SearchIcon className="text-black hover:text-white h-5" />
+          <SearchIcon className="text-black h-5" />
         </figure>
         <figure className="navbar-icon">
-          <BellIcon className="text-black hover:text-white h-5" />
+          <BellIcon className="text-black h-5" />
         </figure>
-        <figure className="bg-gray-200 flex space-x-3 h-12  items-center p-3 rounded-full">
+        <figure className="bg-white border border-2 text-blue-900 flex space-x-3 h-12  items-center p-3 rounded-full">
           <Image
-            className="rounded-full -translate-y-3"
+            className="rounded-full"
             src="https://source.unsplash.com/100x100/?portrait"
-            width={50}
-            height={50}
+            width={35}
+            height={35}
           />
-          <h2 className="font-medium text-md">Username</h2>
+          <h2 className="font-medium primary-text text-md">Username</h2>
         </figure>
       </div>
     </div>

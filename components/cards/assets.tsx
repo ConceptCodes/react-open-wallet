@@ -1,5 +1,4 @@
 import { DotsVerticalIcon } from '@heroicons/react/outline';
-// import { logos } from '@utils/logos.util'
 import React, { Component } from 'react'
 import { currency } from '@enums/currency.enum'
 import Image from 'next/image'
@@ -44,7 +43,7 @@ export class AssetCard extends Component<IAssest, AssetState> {
   // render will know everything!
   render() {
     return (
-      <article className={`flex-col bg-${this.props.color}-200 w-full h-[300px] relative rounded-xl p-3`}>
+      <article className={`flex-col bg-${this.props.color}-200 w-full h-[300px] relative rounded-xl cursor-pointer p-3`}>
       <section className="flex justify-between"> 
         <div className="flex-col">
           <h1 className="font-bold text-2xl uppercase">
@@ -55,7 +54,7 @@ export class AssetCard extends Component<IAssest, AssetState> {
         </div>
         <DotsVerticalIcon className="h-5 text-gray-400" />
       </section>
-      <section className="flex justify-between items-center absolute inset-x-0 bottom-0 p-3">
+      <section className="flex justify-between items-center absolute inset-x-0 bottom-0 p-5">
         <figure className="bg-white rounded-xl p-3">
           <Image 
             src="https://via.placeholder.com/50"

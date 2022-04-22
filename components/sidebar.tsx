@@ -1,11 +1,11 @@
 import type { NextPage } from 'next'
-import { CurrencyDollarIcon, MenuAlt1Icon, ChartBarIcon, UserIcon, LogoutIcon  } from '@heroicons/react/outline'
+import { QrcodeIcon, MenuAlt1Icon, ChartBarIcon, UserIcon, LogoutIcon  } from '@heroicons/react/outline'
 
 const Sidebar: NextPage = () => {
   return (
     <article className="flex flex-col p-3 items-center justify-around h-screen">
-        <figure className="flex h-16 w-16 bg-purple-600 items-center rounded-full justify-center">
-            <CurrencyDollarIcon className="h-10 text-white" />
+        <figure className="flex h-16 w-16 primary-bg items-center rounded-full justify-center">
+            <QrcodeIcon className="h-10 text-white" />
         </figure>
         <div className="flex-col space-y-6">
           <MenuAlt1Icon className="menu-icon" />

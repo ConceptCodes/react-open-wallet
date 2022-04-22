@@ -4,7 +4,7 @@
 
 
 .navbar-icon {
-    @apply bg-gray-200 flex items-center h-10 w-10 justify-center rounded-full cursor-pointer hover:bg-black;
+    @apply bg-gray-200 flex items-center h-10 w-10 justify-center rounded-full cursor-pointer;
 }
 
 .menu-icon {
@@ -12,5 +12,13 @@
 }
 
 .section-title {
-    @apply font-bold pb-5 text-xl;
+    @apply font-bold pb-5 text-2xl;
+}
+
+.primary-bg {
+    @apply bg-blue-700;
+}
+
+.primary-text {
+    @apply text-blue-700;
 }
