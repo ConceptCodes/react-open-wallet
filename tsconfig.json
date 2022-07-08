@@ -11,7 +11,9 @@
       "@/*": ["*"],
       "@components/*": ["components/*"],
       "@enums/*": ["enums/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@types/*": ["types/*"],
+      "@hooks/*": ["hooks/*"]
     },
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,

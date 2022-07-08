@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { MarketRow } from '@/components/cards/marketRow'
+import { MarketCard } from '@/components/cards/market.card'
 
 export class Markets extends Component {
   render() {
@@ -10,7 +10,7 @@ export class Markets extends Component {
         </h1>
         <table className="w-full text-left table-auto">
           <thead>
-            <tr>
+            <tr className="odd:bg-white even:bg-slate-100">
               <th>Name</th>
               <th>Price</th>
               <th>Change</th>
@@ -19,14 +19,14 @@ export class Markets extends Component {
             </tr>
           </thead>
           <tbody className="space-y-3">
-            <MarketRow
+            <MarketCard
               name="ethereum"
               price="2"
               change={3.45}
               marketCap={343523}
               watch
             />
-            <MarketRow
+            <MarketCard
               name="bitcoin"
               price="2"
               change={3.45}

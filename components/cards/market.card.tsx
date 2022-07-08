@@ -16,7 +16,7 @@ type MarketState = {
 
 const ICON_SIZE = 'h-8';
 
-export class MarketRow extends Component<IMarketData, MarketState> {
+export class MarketCard extends Component<IMarketData, MarketState> {
   render() {
     return (
       <tr className="py-3">

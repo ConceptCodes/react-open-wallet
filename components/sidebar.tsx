@@ -1,19 +1,21 @@
 import type { NextPage } from 'next'
-import { QrcodeIcon, MenuAlt1Icon, ChartBarIcon, UserIcon, LogoutIcon  } from '@heroicons/react/outline'
+import { QrcodeIcon, MenuAlt1Icon, ChartBarIcon, UserIcon, LogoutIcon } from '@heroicons/react/outline'
+import Link from 'next/link'
+import { SideBarIcon } from '@components/cards/sidebar.icon'
 
 const Sidebar: NextPage = () => {
+
   return (
-    <article className="flex flex-col p-3 items-center justify-around h-screen">
-        <figure className="flex h-16 w-16 primary-bg items-center rounded-full justify-center">
-            <QrcodeIcon className="h-10 text-white" />
+    <section className="flex lg:flex-col p-3 max-h-full items-center justify-between">
+      <Link href="/">
+        <figure className="flex cursor-pointer h-20 w-20 primary-bg items-center rounded-full justify-center">
+          <QrcodeIcon className="h-10 text-white" />
         </figure>
-        <div className="flex-col space-y-6">
-          <MenuAlt1Icon className="menu-icon" />
-          <ChartBarIcon className="menu-icon" />
-          <UserIcon className="menu-icon" />
-        </div>
-        <LogoutIcon className="menu-icon" />
-    </article>
+      </Link>
+      <div className="flex flex-col lg:space-y-6">
+        <SideBarIcon page="gallery" icon={<MenuAlt1Icon className="menu-icon" />} />
+      </div>
+    </section>
   )
 }
 
